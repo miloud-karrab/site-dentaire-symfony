@@ -5,7 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+        {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+      
+     <link rel="stylesheet" href="{{ asset('styles/css/flaticon.css') }}">
+      <link rel="stylesheet" href="{{ asset('styles/css/nice-select.css') }}">
+       <link rel="stylesheet" href="{{ asset('styles/css/jquery-ui.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('styles/css/magnific-popup.css') }}">
+         <link rel="stylesheet" href="{{ asset('styles/css/owl.carousel.min.css') }}">
+          <link rel="stylesheet" href="{{ asset('styles/css/slicknav.min.css" type="text/css') }}">
+        
+        {% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
@@ -13,7 +25,8 @@
         {{ encore_entry_script_tags('app') }}
    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"  crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"  crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"  crossorigin="anonymous"></script>
 
        
         {% endblock %}
